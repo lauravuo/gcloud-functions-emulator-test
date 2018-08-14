@@ -1,7 +1,15 @@
-# Project template for Node.js
+# Google cloud emulator test project
 
-[![CircleCI](https://circleci.com/gh/lauravuo/node-project-template.svg?style=svg)](https://circleci.com/gh/lauravuo/node-project-template)
+[![CircleCI](https://circleci.com/gh/lauravuo/gcloud-functions-emulator-test.svg?style=svg)](https://circleci.com/gh/lauravuo/gcloud-functions-emulator-test)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lauravuo/node-project-template.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/lauravuo/gcloud-functions-emulator-test.svg)](https://greenkeeper.io/)
 
-Simple template for basic Node app setup
+# Testing
+
+```
+# Define ENV variable GCLOUD_PROJECT
+# start emulator and deploy function:
+make deploy
+```
+
+HTTP endpoint address is printed out after successful deployment
