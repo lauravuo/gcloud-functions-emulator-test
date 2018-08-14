@@ -1,19 +1,16 @@
-import winston from 'winston';
+import { createLogger, format, transports } from 'winston';
 
-const { Console } = winston.transports;
-
-const transports = {
-  default: [new Console({ json: false, timestamp: true, colorize: true })],
-};
-
-const exceptionHandlers = {
-  default: [new Console({ json: false, timestamp: true, colorize: true })],
-};
+const { Console } = transports;
 
 const config = {
-  transports: transports.default,
-  exceptionHandlers: exceptionHandlers.default,
+  format: format.combine(
+    format.colorize(),
+    format.timestamp(),
+    format.printf(info => `[${info.timestamp}] ${info.level}: ${info.message}`),
+  ),
+  transports: [new Console()],
+  exceptionHandlers: [new Console()],
   exitOnError: false,
 };
 
-export default winston.createLogger(config);
+export default createLogger(config);
