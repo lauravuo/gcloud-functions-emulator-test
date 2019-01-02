@@ -36,6 +36,6 @@
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.10.0",
     "greenkeeper-lockfile": "^1.14.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "2.6.2"
   }
 }
