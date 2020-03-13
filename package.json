@@ -33,7 +33,7 @@
     "babel-preset-env": "^1.6.1",
     "circleci-automerge": "^1.1.0",
     "eslint": "^5.0.1",
-    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.10.0",
     "greenkeeper-lockfile": "^1.14.0",
     "rimraf": "^2.6.2"
